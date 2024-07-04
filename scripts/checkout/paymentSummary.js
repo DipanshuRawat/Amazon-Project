@@ -19,7 +19,7 @@ export function renderPaymentSummary() {
   const taxCents = totalBeforeTaxCents * 0.1;
   const totalCents = totalBeforeTaxCents + taxCents;
 
-  const paynmentSummaryHTML = `
+  const paymentSummaryHTML = `
     <div class="payment-summary-title">
       Order Summary
     </div>
@@ -54,5 +54,5 @@ export function renderPaymentSummary() {
     </button>
   `;
 
-  document.querySelector('.js-payment-summary').innerHTML = paynmentSummaryHTML;
+  document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
 }
